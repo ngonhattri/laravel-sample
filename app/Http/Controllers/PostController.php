@@ -14,7 +14,11 @@ class PostController extends Controller
      */
     public function index()
     {
-        //
+        // $data['title'] = 'Posts';
+        // $data['q'] = $request->get('q');
+        // $data['posts'] = Post::where('caption', 'like', '%'.$data['q']. '%')->get();
+        $posts = Post::all();
+        return view('posts', ['posts'=>$posts]);
     }
 
     /**
