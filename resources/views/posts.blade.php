@@ -1,4 +1,5 @@
-
+@extends('app')
+@section('content')
   <div class="card">
     <div class="card-body p-0 table-responsive">
       <table class="table table-bordered table-striped table-hover m-0">
@@ -19,3 +20,4 @@
       </table>
     </div>
   </div>
+  @endSection
