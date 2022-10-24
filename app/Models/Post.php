@@ -16,4 +16,8 @@ class Post extends Model
     public function user() {
         return $this->belongsTo(User::class);
     }
+
+    function comments(){
+    	return $this->hasMany('app\Models\Comment')->orderBy('id','desc');
+    }
 }
