@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
+use App\Models\Comment;
 use Illuminate\Http\Request;
 
 class PostController extends Controller
@@ -14,7 +15,17 @@ class PostController extends Controller
      */
     public function index()
     {
-        //
+        // $data['title'] = 'Posts';
+        // $data['q'] = $request->get('q');
+        // $data['posts'] = Post::where('caption', 'like', '%'.$data['q']. '%')->get();
+        $posts = Post::all();
+        return view('posts', ['posts'=>$posts]);
+    }
+
+    public function detail($postId){
+        Post::find($postId);
+    	$detail=Post::find($postId);
+    	return view('detail',['detail'=>$detail]);
     }
 
     /**
