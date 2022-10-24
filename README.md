@@ -33,6 +33,18 @@ php artisan tinker
 >>> namespace App\Models
 ```
 
+4. Migration
+
+```
+php artisan migration
+```
+
+5. Seeder
+
+```
+php artisan db:seed
+```
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
