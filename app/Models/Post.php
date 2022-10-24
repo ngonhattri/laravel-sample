@@ -18,6 +18,6 @@ class Post extends Model
     }
 
     function comments(){
-    	return $this->hasMany('app\Models\Comment')->orderBy('id','desc');
+    	return $this->hasMany('App\Models\Comment')->orderBy('id','desc');
     }
 }
