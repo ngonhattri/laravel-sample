@@ -15,6 +15,9 @@
           <td>{{$post->user_id}}</td>
           <td>{{$post->name}}</td>
           <td>{{$post->contents}}</td>
+          <td>
+            <a class="btn btn-sm btn-warning" href="{{url('detail/'.$post->id)}}">Comment</a>
+          </td>
         </tr>
         @endforeach
       </table>

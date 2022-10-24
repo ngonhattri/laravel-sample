@@ -21,6 +21,12 @@ class PostController extends Controller
         return view('posts', ['posts'=>$posts]);
     }
 
+    public function detail(Request $request, $postId){
+        Post::find($postId);
+    	$detail=Post::find($postId);
+    	return view('detail',['detail'=>$detail]);
+    }
+
     /**
      * Show the form for creating a new resource.
      *
