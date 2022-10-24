@@ -21,17 +21,67 @@ class CommentSeeder extends Seeder
         ]);
         Comment::create([
             'user_id' => 1,
-            'post_id' => 1,
+            'post_id' => 5,
             'comment' => 'テストコメント2',
         ]);
         Comment::create([
             'user_id' => 1,
-            'post_id' => 1,
+            'post_id' => 5,
             'comment' => 'テストコメント3',
         ]);
         Comment::create([
             'user_id' => 1,
-            'post_id' => 1,
+            'post_id' => 5,
+            'comment' => 'テストコメント4',
+        ]);
+        Comment::create([
+            'user_id' => 1,
+            'post_id' => 5,
+            'comment' => 'テストコメント4',
+        ]);
+        Comment::create([
+            'user_id' => 1,
+            'post_id' => 5,
+            'comment' => 'テストコメント4',
+        ]);
+        Comment::create([
+            'user_id' => 1,
+            'post_id' => 2,
+            'comment' => 'テストコメント4',
+        ]);
+        Comment::create([
+            'user_id' => 1,
+            'post_id' => 2,
+            'comment' => 'テストコメント4',
+        ]);
+        Comment::create([
+            'user_id' => 1,
+            'post_id' => 2,
+            'comment' => 'テストコメント4',
+        ]);
+        Comment::create([
+            'user_id' => 1,
+            'post_id' => 3,
+            'comment' => 'テストコメント4',
+        ]);
+        Comment::create([
+            'user_id' => 1,
+            'post_id' => 3,
+            'comment' => 'テストコメント4',
+        ]);
+        Comment::create([
+            'user_id' => 1,
+            'post_id' => 2,
+            'comment' => 'テストコメント4',
+        ]);
+        Comment::create([
+            'user_id' => 1,
+            'post_id' => 4,
+            'comment' => 'テストコメント4',
+        ]);
+        Comment::create([
+            'user_id' => 1,
+            'post_id' => 4,
             'comment' => 'テストコメント4',
         ]);
     }
