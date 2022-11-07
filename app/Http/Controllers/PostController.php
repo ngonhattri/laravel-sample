@@ -23,7 +23,6 @@ class PostController extends Controller
     }
 
     public function detail($postId){
-        Post::find($postId);
     	$detail=Post::find($postId);
     	return view('detail',['detail'=>$detail]);
     }
