@@ -45,6 +45,9 @@ php artisan migration
 php artisan db:seed
 ```
 
+LaravelUI 作成：
+https://qiita.com/daisu_yamazaki/items/79718fa900c2fd142599
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
