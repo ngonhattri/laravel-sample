@@ -19,12 +19,13 @@ class PostController extends Controller
         // $data['q'] = $request->get('q');
         // $data['posts'] = Post::where('caption', 'like', '%'.$data['q']. '%')->get();
         $posts = Post::all();
-        return view('posts', ['posts'=>$posts]);
+        return view('home', ['posts' => $posts]);
     }
 
-    public function detail($postId){
-    	$detail=Post::find($postId);
-    	return view('detail',['detail'=>$detail]);
+    public function detail($postId)
+    {
+        $detail = Post::find($postId);
+        return view('detail', ['detail' => $detail]);
     }
 
     /**
