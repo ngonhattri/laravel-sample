@@ -31,22 +31,31 @@ php artisan tinker
 
 ```
 >>> namespace App\Models
+
+```
+4. マイグレーションの生成->新規テーブルを作成
+
+```
+php artisan make:migration テーブル名
 ```
 
-4. Migration
+5. Migration
 
 ```
 php artisan migration
 ```
 
-5. Seeder
+6. Seeder
 
 ```
 php artisan db:seed
 ```
 
 LaravelUI 作成：
-https://qiita.com/daisu_yamazaki/items/79718fa900c2fd142599
+https://qiita.com/daisu_yamazaki/items/b946594896179abcd203
+
+日本語化：
+https://logsuke.com/web/programming/laravel/laravel-breeze-lang-ja
 
 ## License
 
