@@ -5,8 +5,11 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
-
+                <h5 class="card-header d-flex justify-content-between align-items-center">
+                    {{ __('Dashboard') }}
+                    <a class="btn btn-sm btn-primary" href="{{url('add')}}">{{ __('Add')}}</a>
+                    <!-- Wrap with <div>...buttons...</div> if you have multiple buttons -->
+                </h5>
                 <div class="card-body p-0 table-responsive">
                     <table class="table table-bordered table-striped table-hover m-0">
                         <thead>
@@ -22,7 +25,8 @@
                             <td>{{$post->name}}</td>
                             <td>{{$post->contents}}</td>
                             <td>
-                                <a class="btn btn-sm btn-warning" href="{{url('post/'.$post->id)}}">Comment</a>
+                                <a class="btn btn-sm btn-warning" href="{{url('post/'.$post->id)}}">{{ __('Details')
+                                    }}</a>
                             </td>
                         </tr>
                         @endforeach

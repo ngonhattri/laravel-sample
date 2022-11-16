@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
-use App\Models\Comment;
 use Illuminate\Http\Request;
 
 class PostController extends Controller
@@ -35,7 +34,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        return view('post/create');
     }
 
     /**
@@ -46,7 +45,13 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $post = new Post([
+            'user_id' => auth()->id(),
+            'name' => auth()->user()->name,
+            'contents' => $request->contents,
+        ]);
+        $post->save();
+        return redirect('home')->with('success', 'Post uploaded Successfully');
     }
 
     /**
