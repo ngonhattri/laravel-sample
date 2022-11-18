@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CommentController;
 use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
@@ -25,3 +26,4 @@ Route::get('/home', [PostController::class, 'index'])->name('home');
 Route::get('/post/{id}', [PostController::class, 'detail'])->name('detail');
 Route::get('/add', [PostController::class, 'create']);
 Route::post('postStore', [PostController::class, 'store'])->name('postStore');
+Route::post('/commentStore', [CommentController::class, 'store'])->name('comment.store');
